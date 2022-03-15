@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4DDE5BCA954C806E071F8CEF /* Pods_RandomAnimation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CD060E53BC8DEB005134DE /* Pods_RandomAnimation.framework */; };
 		6CEEBB4C27E11BC6006D478F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEEBB4B27E11BC6006D478F /* AppDelegate.swift */; };
 		6CEEBB4E27E11BC6006D478F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEEBB4D27E11BC6006D478F /* SceneDelegate.swift */; };
 		6CEEBB5027E11BC6006D478F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEEBB4F27E11BC6006D478F /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14CD060E53BC8DEB005134DE /* Pods_RandomAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RandomAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CE0C57B9D07C694DB4001DC /* Pods-RandomAnimation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomAnimation.release.xcconfig"; path = "Target Support Files/Pods-RandomAnimation/Pods-RandomAnimation.release.xcconfig"; sourceTree = "<group>"; };
 		6CEEBB4827E11BC6006D478F /* RandomAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CEEBB4B27E11BC6006D478F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6CEEBB4D27E11BC6006D478F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		6CEEBB5427E11BC8006D478F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6CEEBB5727E11BC8006D478F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6CEEBB5927E11BC8006D478F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1BD1414498DAD5D2C51B8DA /* Pods-RandomAnimation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomAnimation.debug.xcconfig"; path = "Target Support Files/Pods-RandomAnimation/Pods-RandomAnimation.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DDE5BCA954C806E071F8CEF /* Pods_RandomAnimation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AA9EC717C8B1889B10E130F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B1BD1414498DAD5D2C51B8DA /* Pods-RandomAnimation.debug.xcconfig */,
+				5CE0C57B9D07C694DB4001DC /* Pods-RandomAnimation.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		6CEEBB3F27E11BC5006D478F = {
 			isa = PBXGroup;
 			children = (
 				6CEEBB4A27E11BC6006D478F /* RandomAnimation */,
 				6CEEBB4927E11BC6006D478F /* Products */,
+				0AA9EC717C8B1889B10E130F /* Pods */,
+				EB4E38529DAA2885DF21268D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +73,55 @@
 		6CEEBB4A27E11BC6006D478F /* RandomAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				6CEEBB4B27E11BC6006D478F /* AppDelegate.swift */,
-				6CEEBB4D27E11BC6006D478F /* SceneDelegate.swift */,
-				6CEEBB4F27E11BC6006D478F /* ViewController.swift */,
-				6CEEBB5127E11BC6006D478F /* Main.storyboard */,
-				6CEEBB5427E11BC8006D478F /* Assets.xcassets */,
-				6CEEBB5627E11BC8006D478F /* LaunchScreen.storyboard */,
-				6CEEBB5927E11BC8006D478F /* Info.plist */,
+				6CEEBB6227E11C03006D478F /* ViewControllers */,
+				6CEEBB6027E11BF1006D478F /* Storyboards */,
+				6CEEBB6127E11BFD006D478F /* Resources */,
+				6CEEBB5F27E11BE8006D478F /* App */,
 			);
 			path = RandomAnimation;
+			sourceTree = "<group>";
+		};
+		6CEEBB5F27E11BE8006D478F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				6CEEBB4B27E11BC6006D478F /* AppDelegate.swift */,
+				6CEEBB4D27E11BC6006D478F /* SceneDelegate.swift */,
+				6CEEBB5927E11BC8006D478F /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		6CEEBB6027E11BF1006D478F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				6CEEBB5127E11BC6006D478F /* Main.storyboard */,
+				6CEEBB5627E11BC8006D478F /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		6CEEBB6127E11BFD006D478F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6CEEBB5427E11BC8006D478F /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6CEEBB6227E11C03006D478F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6CEEBB4F27E11BC6006D478F /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EB4E38529DAA2885DF21268D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14CD060E53BC8DEB005134DE /* Pods_RandomAnimation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +131,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6CEEBB5C27E11BC8006D478F /* Build configuration list for PBXNativeTarget "RandomAnimation" */;
 			buildPhases = (
+				45457282896D0B6F1314DA28 /* [CP] Check Pods Manifest.lock */,
 				6CEEBB4427E11BC6006D478F /* Sources */,
 				6CEEBB4527E11BC6006D478F /* Frameworks */,
 				6CEEBB4627E11BC6006D478F /* Resources */,
+				38E4C45F048A6A5428A86EF7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +191,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38E4C45F048A6A5428A86EF7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RandomAnimation/Pods-RandomAnimation-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RandomAnimation/Pods-RandomAnimation-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RandomAnimation/Pods-RandomAnimation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		45457282896D0B6F1314DA28 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RandomAnimation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6CEEBB4427E11BC6006D478F /* Sources */ = {
@@ -284,6 +385,7 @@
 		};
 		6CEEBB5D27E11BC8006D478F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1BD1414498DAD5D2C51B8DA /* Pods-RandomAnimation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -291,27 +393,28 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MAMAND5R9P;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RandomAnimation/Info.plist;
+				INFOPLIST_FILE = RandomAnimation/App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Random Animation";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = AlexeyRadomskiy.RandomAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		6CEEBB5E27E11BC8006D478F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CE0C57B9D07C694DB4001DC /* Pods-RandomAnimation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -319,22 +422,22 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MAMAND5R9P;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RandomAnimation/Info.plist;
+				INFOPLIST_FILE = RandomAnimation/App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Random Animation";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = AlexeyRadomskiy.RandomAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
