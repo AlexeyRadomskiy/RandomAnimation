@@ -14,6 +14,8 @@
 		6CEEBB5327E11BC6006D478F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CEEBB5127E11BC6006D478F /* Main.storyboard */; };
 		6CEEBB5527E11BC8006D478F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CEEBB5427E11BC8006D478F /* Assets.xcassets */; };
 		6CEEBB5827E11BC8006D478F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CEEBB5627E11BC8006D478F /* LaunchScreen.storyboard */; };
+		6CEEBB6427E12106006D478F /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEEBB6327E12106006D478F /* Animation.swift */; };
+		6CEEBB6727E123EC006D478F /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEEBB6627E123EC006D478F /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		6CEEBB5427E11BC8006D478F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6CEEBB5727E11BC8006D478F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6CEEBB5927E11BC8006D478F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CEEBB6327E12106006D478F /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		6CEEBB6627E123EC006D478F /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		B1BD1414498DAD5D2C51B8DA /* Pods-RandomAnimation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomAnimation.debug.xcconfig"; path = "Target Support Files/Pods-RandomAnimation/Pods-RandomAnimation.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -48,7 +52,6 @@
 				B1BD1414498DAD5D2C51B8DA /* Pods-RandomAnimation.debug.xcconfig */,
 				5CE0C57B9D07C694DB4001DC /* Pods-RandomAnimation.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -74,6 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				6CEEBB6227E11C03006D478F /* ViewControllers */,
+				6CEEBB6527E1210D006D478F /* Models */,
+				6CEEBB6827E123EF006D478F /* Services */,
 				6CEEBB6027E11BF1006D478F /* Storyboards */,
 				6CEEBB6127E11BFD006D478F /* Resources */,
 				6CEEBB5F27E11BE8006D478F /* App */,
@@ -114,6 +119,22 @@
 				6CEEBB4F27E11BC6006D478F /* ViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6CEEBB6527E1210D006D478F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6CEEBB6327E12106006D478F /* Animation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6CEEBB6827E123EF006D478F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6CEEBB6627E123EC006D478F /* DataManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		EB4E38529DAA2885DF21268D /* Frameworks */ = {
@@ -240,7 +261,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CEEBB5027E11BC6006D478F /* ViewController.swift in Sources */,
+				6CEEBB6727E123EC006D478F /* DataManager.swift in Sources */,
 				6CEEBB4C27E11BC6006D478F /* AppDelegate.swift in Sources */,
+				6CEEBB6427E12106006D478F /* Animation.swift in Sources */,
 				6CEEBB4E27E11BC6006D478F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
